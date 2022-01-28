@@ -79,6 +79,9 @@ internacoes_sp_janeiro <- sivep_sp %>%
     pct_vacina_completa = round((( vacina_completa * 100 ) / total_check),0)
   )
 
+
+#Selecionar só as variáveis importantes e acrescentar a projeção populacional e os dados da SES-SP (doses aplicadas até 01/01/2022) pra calcular a incidência
+
 internados_sp_janeiro <- internacoes_sp_janeiro %>%
   select(sem_vacina,
          uma_dose,
