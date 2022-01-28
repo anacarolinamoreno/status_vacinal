@@ -22,7 +22,7 @@ end.of.epiweek <- function(x, end = 6) {
 
 options(scipen = 999)
 
-#Abrir base Sivep de SP (É um bind_rows dos arquivos SRAG 2021 e 2022, filtrando por SG == "SP")
+#Abrir base Sivep de SP (É um bind_rows dos arquivos SRAG 2021 e 2022, filtrando por SG == "SP" e selecionando só as colunas que importam para o arquivo não ficar muito grande)
 
 sivep_sp <- readRDS('data-raw/sivep_sp.rds')
 
